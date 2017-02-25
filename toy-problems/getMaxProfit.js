@@ -19,22 +19,18 @@
 
 function getMaxProfit(arr) {
 	if (arr.length < 2) {
-		throw new Error('Getting a profit requires at least 2 prices')
+		throw new Error('Getting a profit requires at least 2 prices');
 	}
 
-	// initial settings
 	var minPrice = arr[0];
 	var maxProfit = arr[1] - arr[0];
 
 	for (var i = 1; i < arr.length; i++) {
 		var currentPrice = arr[i];
-
 		var potentialProfit = currentPrice - minPrice;
 
 		maxProfit = Math.max(maxProfit, potentialProfit);
 		minPrice = Math.min(minPrice, currentPrice)
-
-		// console.log(currentPrice, potentialProfit, maxProfit, minPrice);
 	}
 	return maxProfit;
 }

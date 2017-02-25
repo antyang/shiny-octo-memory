@@ -36,11 +36,9 @@ function mergeSorted(arr1, arr2) {
 
 /*
 
-// naive
 function mergeSorted(arr1, arr2) {
 	var mergedArr = arr1.concat(arr2);
 	return mergedArr.sort((a,b) => a - b);
-
 }
 
 // o(nm)
@@ -48,16 +46,17 @@ function mergeSorted(arr1, arr2) {
 	for (var i=0; i <= arr1.length-1;) {
 		for (var j=0; j <= arr2.length-1;) {
 			if (arr1[i] < arr2[j]) {
-				results.push(arr1[i])
-				i++
+				results.push(arr1[i]);
+				i++;
 			}	else {
-				results.push(arr2[j])
-				j++
+				results.push(arr2[j]);
+				j++;
 			}
 		}
 	}
 }
 
 */
+
 console.log(mergeSorted([1,5,10], [2,3,12,15]));
 console.log(mergeSorted([1,2,3], [4,5,6]));

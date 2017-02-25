@@ -12,16 +12,15 @@
 
 function rot13(str) {
   return str.split('').map.call(str, (char) => {
-    var x = char.charCodeAt()
+    var x = char.charCodeAt();
 
     if (x < 65 || x > 90) {
-      return String.fromCharCode(x)
+      return String.fromCharCode(x);
     } else if (x > 77) {
-      return String.fromCharCode(x - 13)
+      return String.fromCharCode(x - 13);
     } else {
-      return String.fromCharCode(x + 13)
+      return String.fromCharCode(x + 13);
     }
-
   }).join('')
 }
 
