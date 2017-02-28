@@ -18,6 +18,29 @@ LinkedList.prototype.insertAfter = function(val) {
         }
         current.next = node;
     }
+};
+
+LinkedList.prototype.deleteNode = function(val) {
+	if(!this.head) {
+		console.log('List is empty');
+		return;
+	}
+
+	if(this.head.data === val) {
+		this.head = this.head.next;
+	} else {
+		var current = this.head;
+		var p = current.next;
+		while (p) {
+			if(p.data === val) {
+				current.next = p.next;
+				break;
+			} else {
+				current = p;
+			}
+			p = p.next;
+		}
+	}
 }
 
 var sll = new LinkedList();
@@ -32,3 +55,10 @@ sll.insertAfter(7);
 sll.insertAfter(8);
 sll.insertAfter(9);
 console.log(JSON.stringify(sll, null, 2));
+
+sll.deleteNode(1);
+sll.deleteNode(9);
+console.log(JSON.stringify(sll, null, 2));
+
+
+
