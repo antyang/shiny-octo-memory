@@ -4,20 +4,20 @@ var LinkedList = function() {
 
 LinkedList.prototype.insertAfter = function(val) {
 	var node = {
-        data: val,
-        next:null,
-    };
+	  data: val,
+	  next:null,
+	};
 
-    if (!this.head) {
-        this.head = node;
-    } else {
-        var current = this.head;
+	if (!this.head) {
+	    this.head = node;
+	} else {
+		var current = this.head;
 
-        while (current.next) {
-            current = current.next;
-        }
-        current.next = node;
-    }
+		while (current.next) {
+		    current = current.next;
+		}
+		current.next = node;
+	}
 };
 
 LinkedList.prototype.deleteNode = function(val) {
@@ -48,10 +48,10 @@ LinkedList.prototype.loopLength = function() {
 	var hare;
 	var isLoop = false;
 	var length = 1;
-	
+
 	tort = this.head;
 	hare = this.head;
-	
+
 	// loop detection
 	while(hare.next.next) {
 		hare = hare.next.next;
