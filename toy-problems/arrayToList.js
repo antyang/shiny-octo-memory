@@ -1,8 +1,8 @@
 var arrayToList = function(arr) {
 	while(arr.length) {
 		return {
-			value : arr[0],
-			rest : arr[1] === null ? null : arrayToList(arr.splice(1)),
+			value: arr[0],
+			rest: arr[1] === null ? null : arrayToList(arr.splice(1))
 		}
 	}
 }
