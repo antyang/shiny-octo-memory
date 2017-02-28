@@ -4,17 +4,17 @@ var LinkedList = function() {
 
 LinkedList.prototype.insertAfter = function(val) {
 	var node = {
-	  data: val,
-	  next:null,
+		data: val,
+		next:null,
 	};
 
 	if (!this.head) {
-	    this.head = node;
+		this.head = node;
 	} else {
 		var current = this.head;
 
 		while (current.next) {
-		    current = current.next;
+			current = current.next;
 		}
 		current.next = node;
 	}
@@ -33,12 +33,12 @@ LinkedList.prototype.deleteNode = function(val) {
 		var p = current.next;
 		while (p) {
 			if(p.data === val) {
-				current.next = p.next;
-				break;
-			} else {
-				current = p;
-			}
-			p = p.next;
+			current.next = p.next;
+			break;
+		} else {
+			current = p;
+		}
+		p = p.next;
 		}
 	}
 }
