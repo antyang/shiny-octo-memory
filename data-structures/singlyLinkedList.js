@@ -43,6 +43,39 @@ LinkedList.prototype.deleteNode = function(val) {
 	}
 }
 
+LinkedList.prototype.loopLength = function() {
+	var tort;
+	var hare;
+	var isLoop = false;
+	var length = 1;
+	
+	tort = this.head;
+	hare = this.head;
+	
+	// loop detection
+	while(hare.next.next) {
+		hare = hare.next.next;
+		tort = tort.next;
+
+		// comes back around
+		if(hare === tort) {
+			isLoop = true;
+			break;
+		}
+	}
+
+	if(isLoop) {
+		hare = hare.next;
+		while(tort !== hare) {
+			++length;
+			hare = hare.next;
+		}
+		return length;
+	} else {
+		return 0;
+	}
+}
+
 var sll = new LinkedList();
 
 sll.insertAfter(1);
@@ -60,5 +93,15 @@ sll.deleteNode(1);
 sll.deleteNode(9);
 console.log(JSON.stringify(sll, null, 2));
 
+sll.insertAfter(1);
+sll.insertAfter(9);
+console.log(JSON.stringify(sll, null, 2));
+
+
+// looping back
+sll.head.next.next.next.next.next.next.next.next = sll.head.next.next;
+
+// length
+console.log(sll.loopLength()) // 6
 
 
