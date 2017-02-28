@@ -1,10 +1,10 @@
 var arrayToList = function(arr) {
-	while(arr.length) {
-		return {
-			value: arr[0],
-			rest: arr[1] === null ? null : arrayToList(arr.splice(1))
-		}
-	}
+  while(arr.length) {
+    return {
+      value: arr[0],
+      rest: arr[1] === null ? null : arrayToList(arr.splice(1))
+    }
+  }
 }
 
 console.log(arrayToList([10, 20]));
