@@ -11,12 +11,12 @@ LinkedList.prototype.insertAfter = function(val) {
 	if (!this.head) {
 		this.head = node;
 	} else {
-		var current = this.head;
+	var current = this.head;
 
-		while (current.next) {
-			current = current.next;
-		}
-		current.next = node;
+	while (current.next) {
+		current = current.next;
+	}
+	current.next = node;
 	}
 };
 
@@ -33,15 +33,15 @@ LinkedList.prototype.deleteNode = function(val) {
 		var p = current.next;
 		while (p) {
 			if(p.data === val) {
-			current.next = p.next;
-			break;
-		} else {
+				current.next = p.next;
+				break;
+			} else {
 			current = p;
-		}
-		p = p.next;
+			}
+			p = p.next;
 		}
 	}
-}
+};
 
 LinkedList.prototype.loopLength = function() {
 	var tort;
@@ -74,7 +74,7 @@ LinkedList.prototype.loopLength = function() {
 	} else {
 		return 0;
 	}
-}
+};
 
 var sll = new LinkedList();
 
