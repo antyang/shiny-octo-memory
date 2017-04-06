@@ -13,7 +13,7 @@ function plusOne(arr) {
 
 	for (var i = arr.length; i--;) {
 		arr[i] += 1;
-		if (arr[i] === 10) {
+		if (arr[i] >= 9) {
 			arr[i] = 0;
 		} else {
 			return arr;
