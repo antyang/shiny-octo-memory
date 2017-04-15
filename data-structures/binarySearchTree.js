@@ -192,15 +192,68 @@ BinarySearchTree.prototype.breadthFirst = function() {
   return result;
 };
 
+BinarySearchTree.prototype.inDepthFirst = function() {
+  var result = [];
+
+  function traverse(current) {
+    if(current === null) {
+      return;
+    }
+    traverse(current.leftChild);
+    result.push(current.value);
+    traverse(current.rightChild);
+  }
+  traverse(this.root);
+  return result;
+};
 
 BinarySearchTree.prototype.preDepthFirst = function() {
+  var result = [];
+
+  function traverse(current) {
+    if(current === null) {
+      return;
+    }
+    result.push(current.value);
+    traverse(current.leftChild);
+    traverse(current.rightChild);
+  }
+  traverse(this.root);
+  return result;
 };
 
-BinarySearchTree.prototype.inDepthFirst = function() {
-};
 
 BinarySearchTree.prototype.postDepthFirst = function() {
+  var result = [];
+
+  function traverse(current) {
+    if(current === null) {
+      return;
+    }
+    traverse(current.leftChild);
+    traverse(current.rightChild);
+    result.push(current.value);
+  }
+  traverse(this.root);
+  return result;
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
