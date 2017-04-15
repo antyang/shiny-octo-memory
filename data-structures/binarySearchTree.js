@@ -51,6 +51,22 @@ BinarySearchTree.prototype.insert = function(value) {
   this.size++;
 };
 
+BinarySearchTree.prototype.findMin = function() {
+  var current = this.root;
+  while(current.leftChild !== null) {
+    current = current.leftChild;
+  }
+  return current.value;
+};
+
+BinarySearchTree.prototype.findMax = function() {
+  var current = this.root;
+  while(current.rightChild !== null) {
+    current = current.rightChild;
+  }
+  return current.value;
+};
+
 BinarySearchTree.prototype.search = function(target) {
   var flag = false;
 
