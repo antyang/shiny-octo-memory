@@ -168,7 +168,31 @@ function power(a, b){
  * Example: merge([1, 4, 7], [2, 3, 6, 9]) => [1, 2, 3, 4, 6, 7, 9]
  */
 
-function merge(arr1, arr2){}
+function merge(arr1, arr2){
+  var result = [];
+
+  function recurse(p1, p2) {
+    if(p1 === arr1.length) {
+      result = result.concat(arr2.slice(p2));
+      return;
+    } else if(p2 === arr2.length) {
+      result = result.concat(arr1.slice(p1));
+      return;
+    }
+
+    if(arr1[p1] <= arr2[p2]) {
+      result.push(arr1[p1]);
+      p1++;
+    } else if(arr2[p2] < arr1[p1]) {
+      result.push(arr2[p2]);
+      p2++;
+    }
+    recurse(p1, p2);
+  }
+
+  recurse(0, 0);
+  return result;
+}
 
 
 
