@@ -90,3 +90,5 @@ class DLL {
     return result;
   }
 }
+
+module.exports = DLL;
