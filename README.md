@@ -4,9 +4,9 @@
 |--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | [Binary Search Tree](http://en.wikipedia.org/wiki/Binary_search_tree)     | [click](https://github.com/antyang/shiny-octo-memory/blob/master/data-structures/binarySearchTree.js)  |
 | [Depth First Search](http://en.wikipedia.org/wiki/Depth-first_search)     | ~~[click](#)~~ |
-| [Linked List]()                                                           | [click](https://github.com/antyang/shiny-octo-memory/blob/master/data-structures/singlyLinkedList.js) |
-| [Linked List - Cycle Detection]()                                         | [click](https://github.com/antyang/shiny-octo-memory/blob/master/data-structures/singlyLinkedList.js#L46) |
-| [Doubly linked List]()                                                    | [click](https://github.com/antyang/shiny-octo-memory/blob/master/data-structures/doubleLinkedList.js) |
+| [Linked List](https://en.wikipedia.org/wiki/Linked_list)                  | [click](https://github.com/antyang/shiny-octo-memory/blob/master/data-structures/singlyLinkedList.js) |
+| [Linked List - Cycle Detection](https://en.wikipedia.org/wiki/Cycle_detection#Floyd.27s_Tortoise_and_Hare)      | [click](https://github.com/antyang/shiny-octo-memory/blob/master/data-structures/singlyLinkedList.js#L46) |
+| [Doubly linked List](https://en.wikipedia.org/wiki/Doubly_linked_list)    | [click](https://github.com/antyang/shiny-octo-memory/blob/master/data-structures/doubleLinkedList.js) |
 | [Binary Heap](http://en.wikipedia.org/wiki/Binary_heap)                   | ~~[click](#)~~ |
 | [Min Heap](http://en.wikipedia.org/wiki/Binary_heap)                      | ~~[click](#)~~ |
 | [Max Heap](http://en.wikipedia.org/wiki/Binary_heap)                      | ~~[click](#)~~ |
