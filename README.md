@@ -3,7 +3,10 @@
 | Algorithms                                                               | Solution                                                                                                                     |
 |--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | [Binary Search Tree](http://en.wikipedia.org/wiki/Binary_search_tree)     | [click](https://github.com/antyang/shiny-octo-memory/blob/master/data-structures/binarySearchTree.js)  |
-| [Depth First Search](http://en.wikipedia.org/wiki/Depth-first_search)     | ~~[click](#)~~ |
+| [Breadth First Search](https://en.wikipedia.org/wiki/Breadth-first_search)     | [click](https://github.com/antyang/shiny-octo-memory/blob/master/data-structures/binarySearchTree.js#L168) |
+| [DFS - In-order](https://en.wikipedia.org/wiki/Tree_traversal#In-order)     | [click](https://github.com/antyang/shiny-octo-memory/blob/master/data-structures/binarySearchTree.js#L195) |
+| [DFS - Pre-order](https://en.wikipedia.org/wiki/Tree_traversal#Pre-order)     | [click](https://github.com/antyang/shiny-octo-memory/blob/master/data-structures/binarySearchTree.js#L210) |
+| [DFS - Post-order](https://en.wikipedia.org/wiki/Tree_traversal#Post-order)     | [click](https://github.com/antyang/shiny-octo-memory/blob/master/data-structures/binarySearchTree.js#L226) |
 | [Linked List](https://en.wikipedia.org/wiki/Linked_list)                  | [click](https://github.com/antyang/shiny-octo-memory/blob/master/data-structures/singlyLinkedList.js) |
 | [Linked List - Cycle Detection](https://en.wikipedia.org/wiki/Cycle_detection#Floyd.27s_Tortoise_and_Hare)      | [click](https://github.com/antyang/shiny-octo-memory/blob/master/data-structures/singlyLinkedList.js#L46) |
 | [Doubly linked List](https://en.wikipedia.org/wiki/Doubly_linked_list)    | [click](https://github.com/antyang/shiny-octo-memory/blob/master/data-structures/doubleLinkedList.js) |
