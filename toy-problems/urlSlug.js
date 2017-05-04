@@ -1,11 +1,10 @@
 function urlSlug(title) {
-  var newTitle = title.split(' ');
-
-  return newTitle.reduce(function(acc, curr) {
-    var newCurr = curr.toLowerCase();
-    acc.push(newCurr);
-    return acc;
-  }, []).join('-');
+  return title.trim()
+              .split(' ')
+              .map(word => word.toLowerCase())
+              .filter(word => word !== "")
+              .join('-')
 }
 
 console.log(urlSlug('Transform thIs tO Slug CASE'));
+console.log(urlSlug(' Transform thIs tO Slug   CASE too '));
