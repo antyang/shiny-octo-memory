@@ -17,7 +17,7 @@ treeLevelSum(input, k) = 47.
 The nodes at level 2 are 3, 8, 13, and 23, so the answer is 3+8+13+23 = 47.
 */
 
-function treeLevelSum(str, target) {
+function treeLevelSum(str, k) {
   var level = 0;
   var levelTwo = [];
 
